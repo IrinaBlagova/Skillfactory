@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stp="http://star-pizza.com/api/orders">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <stp:addOrder>
+         <stp:userId>12783</stp:userId>
+         <stp:pizzas>
+			<stp:pizza>
+				<stp:pizzaId>12</stp:pizzaId> 
+				<stp:count>2</stp:count>
+			</stp:pizza>
+			<stp:pizza>
+				<stp:pizzaId>19</stp:pizzaId> 
+				<stp:count>1</stp:count>
+			</stp:pizza>
+			<stp:pizza>
+				<stp:pizzaId>25</stp:pizzaId> 
+				<stp:count>1</stp:count>
+			</stp:pizza>
+		 </stp:pizzas>
+		 <stp:onlinePayment>1</stp:onlinePayment>
+		 <stp:deliveryType>1</stp:deliveryType>
+		 <stp:deliveryAddress>г.Москва, ул.Преображенский Вал, д.5, стр.2, кв.7</stp:deliveryAddress>
+		 <stp:deliveryTime>09:00-10:00</stp:deliveryTime>
+      </stp:addOrder>
+   </soapenv:Body>
+</soapenv:Envelope>
